@@ -18,10 +18,10 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class=""> <img class="character mario" src="assets/images/mario.png"> </div>
-			<div class=""> <img class="character link" src="assets/images/link.png"> </div>
-			<div class=""> <img class="character fox" src="assets/images/fox.png"> </div>
-			<div class=""> <img class="character bowser" src="assets/images/bowser.png"> </div>
+			<div class="col-sm-2"> <img class="character mario img-responsive" data-hp="110" data-attack="20" src="assets/images/mario.png"> </div>
+			<div class="col-sm-2"> <img class="character link img-responsive" data-hp="120" data-attack="23" src="assets/images/link.png"> </div>
+			<div class="col-sm-2"> <img class="character fox img-responsive" data-hp="105" data-attack="10" src="assets/images/fox.png"> </div>
+			<div class="col-sm-2"> <img class="character bowser img-responsive" data-hp="150" data-attack="50" src="assets/images/bowser.png"> </div>
 		</div>
 		<div class="row">
 			<div class="choose_character"> <h2>Select Your Character</h2> </div>
@@ -32,7 +32,10 @@
 		<div class="row">
 			<div class="battle_section">
 				<h2>Battle Map</h2>
-				<div class="attacker"></div>
+				<div class="attacker">
+					<button type="button" class="btn btn-secondary" style="display:none">Attack</button>
+					<h3 class="attack_text"></h3>
+				</div>
 				<div class="defender"></div>
 
 			</div>
