@@ -18,7 +18,6 @@ function chooseCharacter() {
 	attackTotal = attack;
 	console.log(attackerHP);
 
-	console.log("DeezNutz");
 };
 
 function chooseOpponent() {
@@ -28,7 +27,6 @@ function chooseOpponent() {
 	$('button').show();
 
 	console.log(defenderHP);
-	console.log('Ballz')
 };
 
 function attackOpponent() {
@@ -38,15 +36,13 @@ function attackOpponent() {
 			attackerHP = attackerHP - counterAttack;
 			if(attackerHP <= 0) {
 				$('.attack_text').html("You Suck, Refresh To Play Again");
-			}
-			else {
+			} else {
 				$('.attack_text').html("You attacked the enemey with " + attackTotal + " damage and sustained " + counterAttack + " damage")
 				attackTotal = attackTotal + attack;
 			}
 		} else {
 			$('.defender').empty();
 		}
-		console.log("Sack");
 		console.log("attackHP =",attackerHP);
   	console.log("defenderHP =",defenderHP);
   	console.log(attackTotal)
